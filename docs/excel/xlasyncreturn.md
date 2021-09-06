@@ -62,7 +62,7 @@ int batchSize = 10;
     valueArray.val.array.columns = (COL)batchSize;
     valueArray.val.array.lparray = pValues;
     //Make the callback with the return value
-    int ret = Excel12(xlAsyncReturn, 0, 2, &amp;handleArray, &amp;valueArray);
+    int ret = Excel12(xlAsyncReturn, 0, 2, handleArray, valueArray);
     //Add code to free the allocated memory here (pHandles, pValues, valueArray, handleArray)
     return ret;
 
